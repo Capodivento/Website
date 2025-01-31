@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-6 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Simone's Portfolio</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="h-screen flex items-center justify-center text-center">
+        <div>
+            <h2 class="text-5xl font-extrabold">Welcome to My Portfolio</h2>
+            <p class="mt-4 text-lg">Showcasing my work, creativity, and passion</p>
+        </div>
+    </section>
+    
+    <section id="about" class="p-12 text-center">
+        <h2 class="text-4xl font-bold">About Me</h2>
+        <p class="mt-4 max-w-2xl mx-auto">I am a passionate developer with experience in modern web technologies, design, and animations.</p>
+    </section>
+    
+    <section id="projects" class="p-12">
+        <h2 class="text-4xl font-bold text-center">Projects</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Project One</h3>
+                <p class="mt-2">A web application showcasing my frontend skills.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Project Two</h3>
+                <p class="mt-2">An interactive design project with GSAP animations.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold">Project Three</h3>
+                <p class="mt-2">A responsive, user-friendly portfolio website.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="p-12 text-center">
+        <h2 class="text-4xl font-bold">Contact</h2>
+        <p class="mt-4">Let's work together! Reach out via email or social media.</p>
+    </section>
+    
+    <footer class="p-6 text-center text-gray-400">
+        <p>&copy; 2025 Simone. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        gsap.from("#hero h2", { opacity: 0, y: -50, duration: 1, ease: "power2.out" });
+        gsap.from("#hero p", { opacity: 0, y: 50, duration: 1, delay: 0.3, ease: "power2.out" });
+    </script>
+</body>
+</html>
